@@ -67,8 +67,8 @@ title_run.font.color.rgb = RGBColor(0x0F, 0x4C, 0x81)
 info_tbl = doc.add_table(rows=4, cols=2)
 info_tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
 infos = [
-    ("Étudiant :", "Mohamed Taher Zeidi"),
-    ("Classe / Module :", "ASI / 4SIM - Architecture des Systèmes d'Information (Spring Boot)"),
+    ("Étudiant :", "Hamza Najjar"),
+    ("Classe / Module :", "ASI / 4Ssa - Architecture des Systèmes d'Information (Spring Boot)"),
     ("Projet :", "AutoLoc - Contrôleur REST VehiculeController"),
     ("Serveur / Port :", "http://localhost:8081/vehicules")
 ]
