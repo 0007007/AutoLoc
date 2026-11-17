@@ -1,4 +1,4 @@
-package Web.Controller;
+package tn.esprit.autolocapi.web.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -30,7 +30,7 @@ public class VehiculeRestController {
         return  vehiculeServiceImp.modifierVehicule(vehicule);
     }
 
-    @DeleteMapping("/{id")
+    @DeleteMapping("/{id}")
     public void deleteVehiculeById(@PathVariable long id){
         vehiculeServiceImp.supprimerVehiculeById(id);
     }
