@@ -10,4 +10,6 @@ public interface IVehiculeService {
     public Vehicule getVehiculeById (Long id);
     public List<Vehicule> getAllVehicule ();
     public Vehicule supprimerVehiculeById (Long id);
+    Vehicule assignVehiculeToAgence(Long idVehicule, Long idAgence);
+    Vehicule assignedAgence(Vehicule vehicule, Long idVehicule);
 }

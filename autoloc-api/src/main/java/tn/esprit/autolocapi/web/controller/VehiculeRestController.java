@@ -35,4 +35,14 @@ public class VehiculeRestController {
         vehiculeServiceImp.supprimerVehiculeById(id);
     }
 
+    @PutMapping("/assign/{idVehicule}/{idAgence}")
+    public Vehicule assignVehiculeToAgence(@PathVariable Long idVehicule, @PathVariable Long idAgence){
+        return vehiculeServiceImp.assignVehiculeToAgence(idVehicule, idAgence);
+    }
+
+    @PutMapping("/{idAgence}")
+    public Vehicule assignedAgence(@RequestBody Vehicule vehicule,@PathVariable Long idagence){
+        return vehiculeServiceImp.assignedAgence(vehicule, idagence);
+    }
+
 }
